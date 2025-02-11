@@ -136,3 +136,38 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# # Main Streamlit app auto refresh
+# def main():
+#     st.title("Real-Time Train Positions")
+    
+#     # Load API key
+#     with open('key.txt') as f:
+#         apiKey = f.read().strip()
+    
+#     headers = {'api_key': apiKey}
+#     url = 'https://api.wmata.com/gtfs/rail-gtfsrt-vehiclepositions.pb'
+
+#     # Load shapes data
+#     routeShapes = getShapeCSV()
+
+#     # Create a placeholder for the plot
+#     plot_placeholder = st.empty()
+
+#     # Continuous update loop
+#     while True:
+#         # Fetch real-time data
+#         GTFSVehiclePosition = getRealTimePositions(url, headers)
+        
+#         # Plot data on map
+#         fig = plotRealTimePositions(GTFSVehiclePosition, routeShapes)
+        
+#         # Update the plot in the placeholder
+#         plot_placeholder.plotly_chart(fig)
+        
+#         # Wait for 10 seconds before updating again
+#         time.sleep(10)
+
+# if __name__ == '__main__':
+#     main()
