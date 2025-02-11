@@ -115,8 +115,7 @@ def main():
     st.title("Real-Time Train Positions")
     
     # Load API key
-    with open('key.txt') as f:
-        apiKey = f.read().strip()
+    apiKey = st.secrets['apikey']
     
     headers = {'api_key': apiKey}
     url = 'https://api.wmata.com/gtfs/rail-gtfsrt-vehiclepositions.pb'
@@ -126,13 +125,27 @@ def main():
 
     # Refresh button
     if st.button("Refresh Data"):
-        GTFSVehiclePosition = getRealTimePositions(url, headers)
+        GTFSVehiclePositions = getRealTimePositions(url, headers)
         
         # Plot data on map
-        fig = plotRealTimePositions(GTFSVehiclePosition, routeShapes)
+        fig = plotRealTimePositions(GTFSVehiclePositions, routeShapes)
         
         # Display map in Streamlit
         st.plotly_chart(fig)
+
+        st.markdown("### Vehicle Information")
+        st.write(GTFSVehiclePositions)
+
+    # Set Streamlit theme to dark mode
+    st.markdown(
+        """
+        <style>
+        .css-1d391kg { background-color: #0e1117; }
+        .css-1d391kg, .css-1d391kg * { color: #ffffff; }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 if __name__ == '__main__':
     main()
