@@ -134,8 +134,8 @@ def main():
         
         # Display map in Streamlit
         st.plotly_chart(fig)
-
-        st.markdown("### Vehicle Information")
+        currTime = str(GTFSVehiclePositions['timestamp'].iloc[0])
+        st.markdown("### Vehicle Information at {time}".format(time=currTime))
         st.write(GTFSVehiclePositions)
 
     # Set Streamlit theme to dark mode
