@@ -90,11 +90,12 @@ def plotRealTimePositions(GTFSVehiclePosition: pd.DataFrame, routeShapes: pd.Dat
         ))
 
     # Plot vehicle positions
+
     fig.add_trace(go.Scattermap(
         lat=GTFSVehiclePosition['latitude'],
         lon=GTFSVehiclePosition['longitude'],
         mode='markers',
-        marker=dict(size=8, color='white', opacity=0.8),
+        marker=dict(size=10, color='mintcream', opacity=0.8),
         name='Vehicle Positions'
     ))
 
