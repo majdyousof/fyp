@@ -47,7 +47,9 @@ def getRealTimePositions(url: str, headers: dict) -> pd.DataFrame:
             'occupancyStatus': vehicle.get('occupancyStatus')
         })
 
-    return pd.DataFrame(parsed_data)
+    df = pd.DataFrame(parsed_data)
+    df.set_index('id', inplace=True)
+    return df
 
 # Function to read shapes.csv and filter data
 def getShapeCSV() -> pd.DataFrame:
