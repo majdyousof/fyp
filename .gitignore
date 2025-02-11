@@ -175,3 +175,10 @@ cython_debug/
 .pypirc
 
 key.txt
+GTFS Code.zip
+GTFS Code/
+washington_GTFS_data 2024.1.29-2024.2.11.rar
+washington_GTFS_data 2024.2.12-2024.3.24.rar
+washington_GTFS_data 2024.1.29-2024.2.11/
+washington_GTFS_data 2024.2.12-2024.3.24/
+data_collector.py
