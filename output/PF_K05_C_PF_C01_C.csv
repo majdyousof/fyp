@@ -1,0 +1,2 @@
+start_stop,end_stop,start_sequence,end_sequence,mean_speed [km/h],covariance_speed [%],buffer_speed [km/h],mean_time [mins],covariance_time [%],buffer_time [mins],mean_headway [mins],covariance_headway [%],buffer_headway [mins],datetime
+PF_K05_C,PF_C01_C,5,6.0,,,,0.7833333333333333,,0.0,,,,2024-08-02 06:07:00

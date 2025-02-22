@@ -1,0 +1,2 @@
+start_stop,end_stop,start_sequence,end_sequence,no_of_trips,mean_speed [km/h],covariance_speed [%],buffer_speed [km/h],mean_time [mins],covariance_time [%],buffer_time [mins],mean_headway [mins],covariance_headway [%],buffer_headway [mins],datetime
+PF_B04_C,PF_B10_C,1,2.0,1.0,,,,4.983333333333333,,0.0,14.326190476190476,0.6564323503774648,18.286666666666655,2024-02-03 05:47:00

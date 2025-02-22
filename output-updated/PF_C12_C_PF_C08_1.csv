@@ -1,0 +1,7 @@
+start_stop,end_stop,start_sequence,end_sequence,no_of_trips,mean_speed [km/h],covariance_speed [%],buffer_speed [km/h],mean_time [mins],covariance_time [%],buffer_time [mins],mean_headway [mins],covariance_headway [%],buffer_headway [mins],datetime
+PF_C12_C,PF_C08_1,5,6.0,1.0,,,,8.233333333333333,,0.0,,,,2024-02-05 05:50:00
+PF_C12_C,PF_C08_1,5,6.0,1.0,,,,8.483333333333333,,0.0,,,,2024-02-05 05:51:00
+PF_C12_C,PF_C08_1,5,6.0,1.0,,,,8.2,,0.0,,,,2024-02-05 05:53:00
+PF_C12_C,PF_C08_1,5,6.0,1.0,,,,6.383333333333334,,0.0,,,,2024-02-05 05:48:00
+PF_C12_C,PF_C08_1,5,6.0,1.0,,,,7.233333333333333,,0.0,,,,2024-02-05 05:49:00
+PF_C12_C,PF_C08_1,5,6.0,1.0,,,,1.6,,0.0,,,,2024-02-05 05:47:00

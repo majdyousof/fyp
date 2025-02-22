@@ -1,0 +1,4 @@
+start_stop,end_stop,start_sequence,end_sequence,mean_speed [km/h],covariance_speed [%],buffer_speed [km/h],mean_time [mins],covariance_time [%],buffer_time [mins],mean_headway [mins],covariance_headway [%],buffer_headway [mins],datetime
+PF_C09_2,PF_C11_1,4,5.0,,,,6.133333333333334,,0.0,17.383333333333333,0.5437196917656866,6.015000000000001,2024-12-02 06:52:00
+PF_C09_2,PF_C11_1,4,5.0,,,,6.45,,0.0,17.65,0.5061255336538272,5.684999999999999,2024-12-02 06:53:00
+PF_C09_2,PF_C11_1,4,5.0,,,,3.6,,0.0,,,,2024-12-02 07:14:00
